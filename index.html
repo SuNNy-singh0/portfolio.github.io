@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Portfolio website- Sunny</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/799a70c90f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+               <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Full Stack Java Developer</p>
+                <h1>Hi,I'm <span>Sunny</span> From <br>Faridabad,Haryana</h1>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/myimage2.jpeg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p id="hello">
+                            I am an enthusiastic, self-motivated, reliable, responsible and hard working person.
+                            I am an extrovert person which easily interact with anyone through my Good communication
+                            skill.
+                            I also good at problem-solving skill. With my development knowledge I am able to solve
+                            real-time problem.
+
+                        </p>
+                        <div class="tabtitle ">
+                            <p class="tablink activelink" onclick="opentab('skills')">Skills</p>
+                            <p class="tablink" onclick="opentab('experience')">Experience</p>
+                            <p class="tablink" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tabcontent activetab " id="skills">
+                            <ul>
+                                <li><span>Web development</span><br>Build a Reponsive website</li>
+                                <li><span>Desktop application</span><br>Standalone application using Java</li>
+                                <li><span>Database</span><br>Good Command over SQL and Database platform</li>
+                                <li><span>Coding language</span><br>C , C++, Python, Java , javascript</li>
+                            </ul>
+                        </div>
+                        <div class="tabcontent" id="experience">
+                            <ul>
+                                <li><span>No Experience</span><br>I'm Fresher and currently working on my skills</li>
+                            </ul>
+                        </div>
+                        <div class="tabcontent" id="education">
+                            <ul>
+                                <li><span>10+12</span><br> I got 85% in 12th Cbse exam</li>
+                                <li><span>Bacholer Degree</span><br>Currently BTech from MDU Rohtak.</li>
+                                <li><span>Course</span><br>I enroll myself in full java development course</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="service">
+            <div class="container">
+                <h1 class="subtitle2">My Services</h1>
+                <div class="servicelist">
+                <div>
+                    <h2>website development</h2>
+                    <p>Create Reponsive and  unique website according to your requirement</p>
+                    <a href="#">Learnmore</a>
+                </div>
+                <div>
+                    <h2>Desktop application</h2>
+                    <p>Create Standalone application using java frameework like swing,Java fx</p>
+                    <a href="#">Learnmore</a>
+                </div>
+                <div>
+                    <h2>Portfolio</h2>
+                    <p>Create Reponsive and  unique Portfolio according to your requirement</p>
+                    <a href="#">Learnmore</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle2">My Work</h1>
+                <div class="worklist">
+                    <div class="work">
+                    <img src="images/Learning-management-system-info.png" alt="" id="img3">
+                    <div class="layer">
+                     <p>This is Learning-management-system with one to one interaction . 
+                        it will give ease to student and teacher to interact with each other
+                     </p>
+                     <a href="https://github.com/Tonystark7862"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/website.jpg" alt="" id="img1">
+                        <div class="layer">
+                        <p>
+                       This is basic ecommerce website using Html , Css And javascript . It will give 
+                       platform to sell your product online and manage it also.     
+                        </p>
+                        <a href="https://github.com/Tonystark7862"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/quiz.jpg" alt="" id="img2">
+                        <div class="layer">
+                        <p>
+                        This is java quiz application to organise to MCQ based test for classes and Academy
+                        . This is example of Standalone application.
+                        </p>
+                        <a href="https://github.com/Tonystark7862"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="btn"> See more</a>
+        </div>
+        <div id="contact">
+         <div class="container">
+            <div class="row">
+                <div class="left">
+                  <h1 class="subtitle2"> Contact Me</h1>
+                  <p><i class="fa-solid fa-envelope"></i>sunnysingh29122001@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>7827743220</p>
+                  <div class="social">
+                    <a href="https://www.instagram.com/sunny_nice123/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Tonystark7862"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                </div>
+            </div>
+         </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; 2023 Sunny . All rights reserved.</p>
+        </div> 
+    </div>
+   
+   
+    <script>
+        var tablinks = document.getElementsByClassName("tablink")
+        var tabcontents = document.getElementsByClassName("tabcontent")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("activelink")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("activetab")
+            }
+            event.currentTarget.classList.add("activelink")
+            document.getElementById(tabname).classList.add("activetab")
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz1NSqsqjUqq9QiPKNv1W5byWCpzA2icpqG0O13nboZD8l_DnuiYZN4hdwvkXUK-kEHfg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent sucesssfully"
+                setTimeout(function(){
+                  msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>

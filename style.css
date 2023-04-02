@@ -1,0 +1,390 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: white;
+    color: #080808;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background: url(images/Untitled.png);
+    background-position: center;
+}
+.container{
+    padding: 10px 7%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+}
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px ;
+    list-style: none;
+    }
+nav ul li a{
+        color: #F40B7F;
+        text-decoration: none;
+        font-size: 1.4rem;
+        position: relative;
+    }
+nav ul li a::after{
+        content: '';
+        width: 0px;
+        height: 3px;
+        background: blueviolet;
+        position: absolute;
+        left: 0px;
+        bottom: -5px;
+        transform: 0.5s;
+    }
+nav ul li a:hover::after{
+     width: 100%;
+    }
+.headertext{
+    margin-top: 15%;
+    font-size: 30px;
+}
+.headertext h1{
+    font-size: 60px;
+}
+.headertext span{
+    color: #F40B7F;
+}
+/*----------about-------*/
+#about{
+    padding: 80px 0px;
+    color: #F40B7F;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+width: 70%;
+height: 100vh;
+border-radius: 7%;
+border: 9px double blueviolet;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+#hello{
+    margin-top: 50px;
+    font-size: 1.8rem;
+    color: blueviolet;
+    font-family: sans-serif;
+}
+.tabtitle{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tablink{
+    margin-right: 50px;
+    font-size: 1.9rem;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tablink::after{
+    content:'';
+    width: 0px;
+    height: 3px;
+    background: #F40B7F;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 1s;
+}
+.tablink.activelink::after{
+    width: 50%;
+}
+.tabcontent ul li{
+    margin: 10px 0px;
+    list-style: none;
+    font-size: 1.5rem;
+}
+.tabcontent ul li span{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: blueviolet;
+}
+.tabcontent{
+    display: none;
+}
+.tabcontent.activetab{
+    display: block;
+}
+#service{
+    padding: 30px 0px;
+}
+.subtitle2{
+    align-items: center;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #F40B7F;
+}
+.servicelist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+.servicelist div{
+    background: aliceblue;
+   text-align: center;
+   border-radius: 5%;
+   transition: 1sec;
+}
+.servicelist div:hover{
+    background-color: black;
+    color: white;
+    margin-top: -20px;
+    border: 2px solid #F40B7F;
+}
+.servicelist h2{
+    color:#F40B7F;
+    text-decoration: underline;
+}
+.servicelist p{
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-family: 'Alkatra', cursive;
+}
+.servicelist a{
+    font-size: 1.3rem;
+    color: blueviolet;
+    font-weight: 600;
+}
+#portfolio{
+    padding: 50px 0px;
+}
+.worklist{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 40px
+}
+.work{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Alkatra', cursive;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#img1{
+display: block;
+width: 100%;
+height: 70vh;
+}
+#img2{
+    display: block;
+    width: 100%;
+    height: 70vh;
+}
+ #img3{
+    display: block;
+        width: 100%;
+        height: 70vh;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.7),#A578F4);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    transition: 0.7sec;
+}
+.work:hover .layer{
+    height: 100%;
+}
+.layer a{
+    margin-top: 20px;
+    color: #F40B7F;
+    background: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+.btn{
+    display: block;
+    color: black;
+    margin: 50px auto;
+    border: 1px solid #F40B7F;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px ;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.btn:hover{
+    background: #F40B7F;
+    color: azure;
+}
+/*---------------contact-------*/
+
+.left{
+    flex-basis: 35%;
+}
+.right{
+    flex-basis: 60%;
+}
+.left p{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: blueviolet;
+}
+.left p i{
+    margin-right: 20px;
+    color: #F40B7F;
+    font-size: 1.3rem;
+}
+.social{
+    margin-top: 30px;
+}
+.social a{
+    text-decoration: none;
+    font-size: 2.8rem;
+    margin-right: 20px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social a:hover{
+    color: #F40B7F;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #F40B7F;
+}
+.btn.btn2:hover{
+    background-color: #080808;
+}
+.right form{
+    width: 100%;
+}
+form input , form textarea{
+    width: 90%;
+    border:0;
+    outline: none;
+    background:lightcyan;
+    padding: 15px;
+    margin: 15px 0;
+    border: 5px double blueviolet;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.copyright{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    background-color:black;
+    width: 100%;
+    font-weight: 600;
+    padding: 25px 0;
+}
+#icon{
+    display: none;
+}
+nav .fas{
+display: none;
+}
+#msg{
+    color: blueviolet;
+    font-size: 1.4rem;
+    margin-top: -10px;
+    display: block ;
+    font-weight: 500;
+}
+/*---css for small screen----*/
+@media only screen  and (max-width : 600px){
+#header{
+    background: url(images/logo2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.headertext{
+    margin-top: 600px;
+}
+#header{
+    width: 150%;
+}
+.about-col-1 img{
+    margin-left: 90px;
+    width: 190%;
+}
+.subtitle{
+    text-align: center;
+}
+#service{
+    margin-left: 50px;
+}
+#portfolio{
+    margin-left: 50px;
+}
+#contact{
+    margin-left: 50px;
+}
+nav .fas{
+    display: block;
+    font-size: 25px;
+}
+nav ul{
+    background:lightcyan;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    padding-top: 50px;
+    z-index: 2;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+.copyright{
+    width: 107%;
+}
+}
